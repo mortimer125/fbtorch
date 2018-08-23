@@ -35,4 +35,4 @@ INSTALL(
   ${luasrc}
   DESTINATION "${Torch_INSTALL_LUA_PATH_SUBDIR}")
 
-TARGET_LINK_LIBRARIES(fbtorch_ext folly)
+target_link_libraries(fbtorch_ext ${FOLLY_LIBRARIES})
